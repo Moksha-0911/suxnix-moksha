@@ -1,4 +1,7 @@
 import React from "react";
+import "../styles/Navbar.css";
+import cart from "../assets/images/cart-icon.png";
+import search from "../assets/images/search-icon.png";
 
 function Navbar() {
   return (
@@ -146,10 +149,11 @@ function Navbar() {
                   <ul>
                     <li className="header-shop-cart">
                       <a href="#" className="cart-count">
-                        <i className="flaticon-shopping-cart"></i>
+                        
+                        <img src={cart} className="cart" alt="" style={{width:"30px" , height:"30px"}}/>
                         <span className="mini-cart-count">0</span>
                       </a>
-
+                     
                       <div className="header-mini-cart">
                         <ul className="woocommerce-mini-cart cart_list product_list_widget list-wrap cartminiwidget">
                           <li className="empty-cart-message">
@@ -170,7 +174,7 @@ function Navbar() {
                     </li>
 
                     <li className="header-search">
-                      <a href="#"><i className="flaticon-search"></i></a>
+                       <img src={search} className="search" alt="" style={{width:"30px" , height:"30px"}}/>
                     </li>
 
                     <li className="offCanvas-btn d-none d-xl-block">
@@ -187,11 +191,12 @@ function Navbar() {
 
           </div>
         </div>
+        
       </div>
     </div>
     
   );
-
 }
+
 
 export default Navbar;

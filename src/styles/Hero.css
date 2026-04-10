@@ -1,0 +1,204 @@
+/* ===== HERO SECTION ===== */
+element.style {
+    --hero-heading-font-size: 48px;
+    --hero-heading-font-weight: 700;
+    --hero-caption-font-size: 16px;
+    --hero-caption-font-weight: 400;
+}
+.banner-area {
+    padding: 41px 0 15px;
+    position: relative;
+}
+.banner-content {
+  text-align: center;
+  position: relative;
+  padding:  0px;
+  background: white;
+  margin-top: 10%;
+  
+}
+
+/* Small top text */
+.banner-caption {
+  color: #f7941d;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Main Heading */
+.banner-content .title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Button */
+.btn-two {
+  display: inline-block;
+  background: #f7941d;
+  
+  color: #fff;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 8px 0 #e07c00;
+}
+
+/* Button Hover */
+.btn-two:hover {
+  background: #0D9B4D;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .banner-content .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-content {
+    padding: 80px 15px;
+  }
+
+  .banner-content .title {
+    font-size: 28px;
+  }
+
+  .btn-two {
+    padding: 10px 25px;
+  }
+}
+
+/* Parent container */
+.banner-content {
+  position: relative;
+}
+
+/* Protein Image */
+.protien {
+  position: relative;
+  z-index: 2;
+  /* above */
+  display: block;
+  margin: 40px auto 0;
+  max-width: 500px;
+}
+
+/* Leaf Image */
+.leaf {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1000px;
+  opacity: 0.8;
+  
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('./assets/fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./assets/fonts/Oswald-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+/* ===== FEATURES SECTION ===== */
+.features-area {
+  padding: 100px 0;
+  margin-top: 120px;  
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  /* 👇 WAVY TOP SHAPE */
+   /* 👇 TOP + BOTTOM WAVY */
+  clip-path: polygon(
+    0 10%, 
+    10% 6%, 
+    20% 10%, 
+    30% 5%, 
+    40% 10%, 
+    50% 6%, 
+    60% 10%, 
+    70% 5%, 
+    80% 10%, 
+    90% 6%, 
+    100% 10%, 
+
+    100% 90%, 
+    90% 94%, 
+    80% 90%, 
+    70% 95%, 
+    60% 90%, 
+    50% 94%, 
+    40% 90%, 
+    30% 95%, 
+    20% 90%, 
+    10% 94%, 
+    0 90%
+  );
+
+}
+
+/* GRID */
+.features-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* ITEM */
+.feature-item {
+  position: relative;
+}
+
+/* ICON */
+.feature-item .icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffcc00;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.feature-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* TEXT */
+.feature-item p {
+  font-size: 14px;
+  color: #e6f5ec;
+}
+
+/* IMAGE */
+.feature-img {
+  max-width: 100%;
+  border-radius: 50%;
+}

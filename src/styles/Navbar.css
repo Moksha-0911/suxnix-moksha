@@ -102,7 +102,9 @@
 .header-action i:hover {
   color: #28a745;
 }
-
+.header-shop-cart {
+  position: relative;
+}
 /* ===== CART BADGE ===== */
 .mini-cart-count {
   background: orange;
