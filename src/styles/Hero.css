@@ -30,13 +30,13 @@ element.style {
 
 /* Main Heading */
 .banner-content .title {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 500;
   color: #222;
   line-height: 1.2;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Oswald, sans-serif;
 }
 
 /* Button */
@@ -51,7 +51,8 @@ element.style {
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
-  box-shadow: 0 8px 0 #e07c00;
+  font-family: 'Oswald',sans-serif;
+  
 }
 
 /* Button Hover */
@@ -107,6 +108,50 @@ element.style {
   max-width: 1000px;
   opacity: 0.8;
   
+}
+.brand-title{
+  position: relative;
+}
+.brand-title .title::before {
+    content: "";
+    position: absolute;
+    left: 32%;
+    top: 11px;
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+}
+.title{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* padding-left: 20px; */
+  font-size: medium;
+}
+
+.brand-title .title::after {
+    content: "";
+    position: absolute;
+    right: 32%;
+    top: 11px;
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+}
+ .brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; 
+}
+
+.brand-item img {
+  max-height: 60px;  
+  max-width: 100px;   
+  object-fit: contain; 
+  width: auto;
+  height: auto;
 }
 @font-face {
   font-family: 'Oswald';
@@ -201,4 +246,327 @@ element.style {
 .feature-img {
   max-width: 100%;
   border-radius: 50%;
+}
+.features-products-wrap {
+    margin-bottom: 40px;
+}
+.features-products-wrap {
+    margin-bottom: 180px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+@media (min-width: 992px) {
+    .features-product-content {
+        padding: 40px 0;
+    }
+}
+.features-product-content {
+    padding: 20px 0;
+}
+.features-product-content {
+    width: 81%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Oswald',sans-serif;
+    font-size: larger;
+
+}
+a:hover{
+  color: orange;
+}
+p {
+    margin-top: 7%;
+    margin-bottom: 1rem;
+    color: rgb(124, 123, 123);
+}
+.h6, h6 {
+    font-size: 1rem;
+    margin-top: 6%;
+}
+.h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+.features-product-bottom .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--tg-heading-font-color);
+    font-family: Oswald, sans-serif;
+    margin-left: 30px;
+}
+
+.main-img {
+  position: relative;
+  display: inline-block;
+}
+
+/* Protein Jar (front) */
+.protein-jar {
+  position: relative;
+  z-index: 2;
+  width: 400px; /* adjust */
+  transition: 0.4s;
+  padding-left: 30%;
+}
+
+/* Tea Leaf (back, bottom-left) */
+.tea-leaf {
+  position: absolute;
+  bottom: -20px;   /* move downward */
+  left: -60px;     /* move to left side */
+  width: 300px;
+
+  z-index: 1;
+  padding-left: 10%;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.main-img:hover .tea-leaf {
+  opacity: 1;          /* fully visible */
+  left: -20px;         /* move slightly toward jar */
+  transform: scale(1.1);
+}
+
+.btn-btn {
+  display: inline-block;
+  background: green;
+  
+  color: #fff;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  /* box-shadow: 0 8px 0 #e07c00;*/
+} 
+.btn-btn:hover{
+  color: white;
+  background-color: #f7941d;
+}
+.features-products-thumb::before{
+  content: "";
+  position: absolute;
+  left: 24%;
+  top: 50%;
+  height: 706px;
+  width: 706px;
+  background-image: url("../assets/images/features_product_dots.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.features-product-content .title {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+@media (min-width: 992px) {
+    .features-product-content .title {
+        font-size: 32px;
+    }
+}
+.features-product-content .title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.features-product-content .title {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 35px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--tg-heading-font-family);
+    color: var(--tg-heading-font-color);
+    margin-top: 0;
+    margin-bottom: .7rem;
+    font-style: normal;
+    line-height: var(--tg-heading-line-height);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.reverse .row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* Protein Jar (front) */
+.protein-whey {
+  position: relative;
+  z-index: 2;
+  width: 400px; /* adjust */
+  transition: 0.4s;
+  padding-left: 30%;
+}
+.main-img2 {
+  position: relative;
+  display: inline-block;
+}
+/* Tea Leaf (back, bottom-left) */
+.tea-leaf2 {
+  position: absolute;
+  bottom: -7px;   
+  right: -110px;     
+  width: 200px;
+
+  z-index: 1;
+  padding-right: 5%;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.main-img2:hover .tea-leaf2 {
+  opacity: 1;          
+  right: -20px;         
+  transform: scale(1.1);
+}
+.features-products-thumb-reverse::before{
+  content: "";
+  position: absolute;
+  left: 38%;
+  top: 50%;
+  height: 700px;
+  width: 700px;
+  background-image: url("../assets/images/features_product_dots.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+}
+.features-products-thumb3::before{
+  content: "";
+  position: absolute;
+  left: 24%;
+  top: 50%;
+  height: 706px;
+  width: 706px;
+  background-image: url("../assets/images/features_product_dots.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  z-index: -1;  
+}
+.main-img3 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Protein Jar (front) */
+.mass-max {
+  position: relative;
+  z-index: 2;
+  width: 400px; /* adjust */
+  transition: 0.4s;
+  padding-left: 30%;
+}
+
+/* Tea Leaf (back, bottom-left) */
+.tea-leaf3 {
+  position: absolute;
+  bottom: -20px;   /* move downward */
+  left: -60px;     /* move to left side */
+  width: 300px;
+
+  z-index: 1;
+  padding-left: 10%;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.main-img3:hover .tea-leaf3 {
+  opacity: 1;          /* fully visible */
+  left: -20px;         /* move slightly toward jar */
+  transform: scale(1.1);
+}
+element.style {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../assets/images/video_img.webp");
+}
+@media (max-width: 1500px) {
+    .video-bg {
+        min-height: 600px;
+    }
+}
+.video-bg {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.justify-content-center {
+    justify-content: center !important;
+    /* padding-left: 10%; */
+    margin-top: 5%;
+}
+.fact-item {
+  display: flex;
+  align-items: center;   /* 🔥 vertical alignment */
+  /* gap: 11px;             space between circle & text */
+}
+
+/* prevent chart from going above */
+.chart {
+  flex-shrink: 0; 
+  padding-left: 10%;       /* 🔥 VERY IMPORTANT */
+}
+.percentage {
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+
+  border-radius: 50%;
+  background: conic-gradient(#f39c12 65%, #eee 0%);
+}
+
+/* Inner white circle */
+.percentage::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;   /* 👈 keep it below text */
+}
+
+/* 🔥 FIX: bring text above */
+.percentage {
+  z-index: 2;
+}
+/* Keep text above */
+.percentage span,
+.percentage small {
+  position: relative;
+  z-index: 1;
+}
+.percentage .text {
+  position: relative;
+  z-index: 2;   /* 🔥 ensures text is always visible */
+}
+.mb-60 {
+    margin-bottom: 60px;
 }
