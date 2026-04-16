@@ -20,12 +20,17 @@ import homeshop1 from "../assets/images/home_shop_thumb02.avif";
 import homeshop2 from "../assets/images/home_shop_thumb03.avif";
 import homeshop3 from "../assets/images/home_shop_thumb04.avif";
 import homeshop4 from "../assets/images/home_shop_thumb01.avif";
+import tealeaf4 from "../assets/images/ingredients_shape_leaf.avif";
+import item1 from "../assets/images/ingredients_item01.webp";
+import item2 from "../assets/images/ingredients_item02.webp";
+import item3 from "../assets/images/ingredients_item03.webp";
+import item4 from "../assets/images/ingredients_item04.webp";
+import formula from "../assets/images/formula_img.webp";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay } from 'swiper/modules';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import massmax from "../assets/images/mass-maxx.webp";
 import tealeaf3 from "../assets/images/tea-leaf3.webp";
 
@@ -249,7 +254,7 @@ function Hero() {
         </div>
       </div>
 
-{/* ===== FEATURES SECTION START ===== */}
+      {/* ===== FEATURES SECTION START ===== */}
       <section
         className="features-area"
         style={{ backgroundImage: `url(${yourGreenBgImage})` }}
@@ -316,7 +321,7 @@ function Hero() {
                 <p>Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency. Low vitamin D levels cause depression, fatigue, and muscle weakness.</p>
                 <div className="features-product-bottom">
                   <a href="" className="btn-btn">Shop Now</a>
-                 
+
                   <span className="price">
                     $89.99
                     <span className="old-price" style={{ color: "orange" }}>&nbsp; $117.99</span></span>
@@ -330,12 +335,12 @@ function Hero() {
         <div class="features-products-wrap reverse">
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-8">
-              <div className="features-products-thumb-reverse" style={{position:"relative"}}>
+              <div className="features-products-thumb-reverse" style={{ position: "relative" }}>
                 <div className="main-img2">
-                <img src={proteinwhey} className="protein-whey" alt="" />
-                <img src={tealeaf2} className="tea-leaf2" alt="" />
+                  <img src={proteinwhey} className="protein-whey" alt="" />
+                  <img src={tealeaf2} className="tea-leaf2" alt="" />
                 </div>
-                </div>
+              </div>
             </div>
             <div className="col-lg-6 col-md-10">
               <div className="features-product-content">
@@ -348,7 +353,7 @@ function Hero() {
                   <a href="" class="btn-btn">Shop Now</a>
                   <span className="price">
                     $59.99&nbsp;
-                    <span className="old-price" style={{color:"orange"}}>$79.99</span></span>
+                    <span className="old-price" style={{ color: "orange" }}>$79.99</span></span>
                 </div>
               </div>
             </div>
@@ -375,7 +380,7 @@ function Hero() {
                 <p>Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency. Low vitamin D levels cause depression, fatigue, and muscle weakness.</p>
                 <div className="features-product-bottom">
                   <a href="" className="btn-btn">Shop Now</a>
-                 
+
                   <span className="price">
                     $89.99
                     <span className="old-price" style={{ color: "orange" }}>&nbsp; $117.99</span></span>
@@ -386,144 +391,303 @@ function Hero() {
         </div>
       </div>
       <div className="swiper-area" >
-          <div className="container" >
+        <div className="container" >
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="protein-swiper" >
+
+                <Swiper
+                  disableOnInteraction:false
+                  spaceBetween={10}
+                  slidesPerView={3}
+                  loop={true}
+                  centeredSlides={true}
+                  centeredSlidesBounds={true}
+                  autoplay={{
+                    delay: 2500,
+
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
+                  className="mySwiper ProteinJarSwipe"
+                >
+                  <SwiperSlide>
+                    <div className="slick-clone">
+                      <div className="home-shop-item">
+                        <div className="home-shop-thumb">
+                          <a href="">
+                            <img src={homeshop1} className="homeshop" alt="" />
+                          </a>
+                          <div className="shop-thumb-shape gray"></div>
+                        </div>
+                        <div className="home-shop-content">
+                          <h4 className="title">
+                            <a href="">Whey Protein Powder</a>
+                          </h4>
+                          <span className="home-shop-price">Tk 49.99</span>
+                          <div className="home-shop-rating">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="slick-clone">
+                      <div className="home-shop-item">
+                        <div className="home-shop-thumb">
+                          <a href="">
+                            <img src={homeshop2} className="homeshop" alt="" />
+                          </a>
+                          <div className="shop-thumb-shape gray"></div>
+                        </div>
+                        <div className="home-shop-content">
+                          <h4 className="title">
+                            <a href="">Whey Protein Powder</a>
+                          </h4>
+                          <span className="home-shop-price">Tk 49.99</span>
+                          <div className="home-shop-rating">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="slick-clone">
+                      <div className="home-shop-item">
+                        <div className="home-shop-thumb">
+                          <a href="">
+                            <img src={homeshop3} className="homeshop" alt="" />
+                          </a>
+                          <div className="shop-thumb-shape gray"></div>
+                        </div>
+                        <div className="home-shop-content">
+                          <h4 className="title">
+                            <a href="">Whey Protein Powder</a>
+                          </h4>
+                          <span className="home-shop-price">Tk 49.99</span>
+                          <div className="home-shop-rating">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="slick-clone">
+                      <div className="home-shop-item">
+                        <div className="home-shop-thumb">
+                          <a href="">
+                            <img src={homeshop4} className="homeshop" alt="" />
+                          </a>
+                          <div className="shop-thumb-shape gray"></div>
+                        </div>
+                        <div className="home-shop-content">
+                          <h4 className="title">
+                            <a href="">Whey Protein Powder</a>
+                          </h4>
+                          <span className="home-shop-price">Tk 49.99</span>
+                          <div className="home-shop-rating">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section className="shopify-section">
+        <div className="video-area video-bg">
+          <div className="video-bg-overlay"></div>
+          <div className="container">
             <div className="row">
-              <div className="col-lg-12">
-                <div className="protein-swiper" >
-                  
-                    <Swiper
-        disableOnInteraction: false
-        spaceBetween={30}
-        slidesPerView={3}
-        loop={true}
-        centeredSlides={false}
-        centeredSlidesBounds={true}
-        autoplay={{
-          delay: 2500,
-          
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="row">
-            <div className="col-sm-2">
-              <div className="protein-jars">
-                <a href="">
-                  <img src={homeshop1} className="homeshop-1" alt="" />
-                </a>
-
+              <div className="col-12">
+                <div className="video-btn">
+                  <a href="https://www.youtube.com/watch?v=HQfF5XRVXjU" className="popup-video ripple-white">
+                    <i className="fas fa-play"></i>
+                  </a>
                 </div>
-              
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="row">
-            <div className="col-sm-2">
-              <div className="protein-jars">
-                <a href="">
-                  <img src={homeshop2} className="homeshop-2" alt="" />
-                </a>
-
-                </div>
-              
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="row">
-            <div className="col-sm-2">
-              <div className="protein-jars">
-                <a href="">
-                  <img src={homeshop3} className="homeshop-3" alt="" />
-                </a>
-
-                </div>
-              
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="row">
-            <div className="col-sm-2">
-              <div className="protein-jars">
-                <a href="">
-                  <img src={homeshop4} className="homeshop-4" alt="" />
-                </a>
-
-                </div>
-              
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
-      
-      <div className="fact-items-wrapper" style={{position:"relative"}}>
-      <div className="row g-0 justify-content-center"><div class="col-lg-4 col-md-6 col-sm-9">
-            <div className="fact-item">
-              <div className="chart" data-percent="65">
-                <span
-  className="percentage"
-  style={{ background: "conic-gradient(#f39c12 65%, #eee 0%)" }}
->
-  <span className="text">65<small>%</small></span>
-</span>
-              </div>
-              <div className="fact-content">
-                <h4 className="title" style={{paddingLeft:"20%",fontFamily:"'Oswald',sans-serif"}}>Active Members</h4>
-                <span style={{color:"grey",paddingLeft:"20px"}}>Yes we did it asap software</span>
-              </div>
+        </div>
+      </section>
+
+      <div className="fact-items-wrapper" style={{ position: "relative" }}>
+        <div className="row g-0 justify-content-center"><div class="col-lg-4 col-md-6 col-sm-9">
+          <div className="fact-item">
+            <div className="chart" data-percent="65">
+              <span
+                className="percentage"
+                style={{ background: "conic-gradient(#f39c12 65%, #eee 0%)" }}
+              >
+                <span className="text">65<small>%</small></span>
+              </span>
             </div>
-          </div><div className="col-lg-4 col-md-6 col-sm-9">
+            <div className="fact-content">
+              <h4 className="title" style={{ paddingLeft: "20%", fontFamily: "'Oswald',sans-serif" }}>Active Members</h4>
+              <span style={{ color: "grey", paddingLeft: "20px" }}>Yes we did it asap software</span>
+            </div>
+          </div>
+        </div><div className="col-lg-4 col-md-6 col-sm-9">
             <div className="fact-item">
               <div className="chart" data-percent="90">
                 <span
-  className="percentage"
-  style={{ background: "conic-gradient(#f39c12 90%, #eee 0%)" }}
->
-  <span className="text">90<small>%</small></span>
-</span>
+                  className="percentage"
+                  style={{ background: "conic-gradient(#f39c12 90%, #eee 0%)" }}
+                >
+                  <span className="text">90<small>%</small></span>
+                </span>
               </div>
               <div className="fact-content">
-                <h4 className="title" style={{paddingLeft:"20%",fontFamily:"'Oswald',sans-serif"}}>Projects Done</h4>
-                <span style={{color:"grey",paddingLeft:"20px"}}>Yes we did it asap software</span>
+                <h4 className="title" style={{ paddingLeft: "20%", fontFamily: "'Oswald',sans-serif" }}>Projects Done</h4>
+                <span style={{ color: "grey", paddingLeft: "20px" }}>Yes we did it asap software</span>
               </div>
             </div>
           </div><div className="col-lg-4 col-md-6 col-sm-9">
             <div className="fact-item">
               <div className="chart" data-percent="80">
                 <span
-  className="percentage"
-  style={{ background: "conic-gradient(#f39c12 80%, #eee 0%)" }}
->
-  <span className="text">80<small>%</small></span>
-</span>
+                  className="percentage"
+                  style={{ background: "conic-gradient(#f39c12 80%, #eee 0%)" }}
+                >
+                  <span className="text">80<small>%</small></span>
+                </span>
               </div>
               <div className="fact-content">
-                <h4 className="title" style={{paddingLeft:"20%",fontFamily:"'Oswald',sans-serif"}}>Get Rewards</h4>
-                <span style={{color:"grey",paddingLeft:"20px"}}>Yes we did it asap software</span>
+                <h4 className="title" style={{ paddingLeft: "20%", fontFamily: "'Oswald',sans-serif" }}>Get Rewards</h4>
+                <span style={{ color: "grey", paddingLeft: "20px" }}>Yes we did it asap software</span>
               </div>
             </div>
           </div></div>
-    </div>
-    <div class="section-title mb-60">
-                <p class="sub-title">.. Increased Energy With Suxnix ..</p>
-                <h2 class="title">Suxnix Ingredients</h2>
+      </div>
+      <div className="container">
+        <div className="row" style={{alignItems:"center",justifyContent:"center"}}>
+          <div className="col-xl-5 col-lg-6 col-md-7">
+            <div className="ingredients-img" style={{position:"relative"}}>
+              <img src={proteinwhey} className="protein-whey2" alt="" />
+              <img src={tealeaf4} className="leaf-4" alt="" />
+            </div>
+          </div>
+          <div className="col-xl-7 col-lg-9">
+            <div className="ingredients-items-wrap">
+              <div className="section-title">
+                <p className="subtitle">..Increased Energy With Suxnix..</p>
+                <h2 className="title2">Suxnix Ingredients</h2>
               </div>
+              <div className="row" style={{marginTop:"5%"}}>
+                <div className="col-md-6 col-sm-8">
+                  <div className="ingredients-item-wow">
+                    <div className="ingredients-thumb">
+                      <img src={item1} className="item-1" alt="" />
+                    </div>
+                    <div className="ingredients-content">
+                      <h5 className="content-title">
+                        Helps You Stick To Your Diet
+                      </h5>
+                      <p>
+                        A thing added to something else in order to complete or enhance it.
+                      </p>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-sm-8">
+                  <div className="ingredients-item-wow">
+                    <div className="ingredients-thumb">
+                      <img src={item2} className="item-1" alt="" />
+                    </div>
+                    <div className="ingredients-content">
+                      <h5 className="content-title">
+                        Helps You Stick To Your Diet
+                      </h5>
+                      <p>
+                        A thing added to something else in order to complete or enhance it.
+                      </p>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-sm-8">
+                  <div className="ingredients-item-wow">
+                    <div className="ingredients-thumb">
+                      <img src={item3} className="item-1" alt="" />
+                    </div>
+                    <div className="ingredients-content">
+                      <h5 className="content-title">
+                        Helps You Stick To Your Diet
+                      </h5>
+                      <p>
+                        A thing added to something else in order to complete or enhance it.
+                      </p>
+                    </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-sm-8">
+                  <div className="ingredients-item-wow">
+                    <div className="ingredients-thumb">
+                      <img src={item4} className="item-1" alt="" />
+                    </div>
+                    <div className="ingredients-content">
+                      <h5 className="content-title">
+                        Helps You Stick To Your Diet
+                      </h5>
+                      <p>
+                        A thing added to something else in order to complete or enhance it.
+                      </p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="tg-supplement-inner">
+          <div className="row" style={{marginTop:"10%"}}>
+            <div className="col-lg-6 col-md-8 order-0 order-lg-2">
+              <div className="tg-supplement-img">
+                <img src={formula} className="formula-img" alt="" />
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="tg-supplement-content">
+                <div className="tg-title">
+                  <span className="tg-subtitle">
+                    .. Suxnix Formula ..
+                  </span>
+                  <h2 className="tg-title2">Why We Chose This Formula</h2>
+                </div>
+                <a href="#" className="tg-btn">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-
   );
 }
 

@@ -53,7 +53,7 @@ function Navbar() {
                       </ul>
 
                       <div className="dropdown-btn">
-                        <span className="fas fa-angle-down"></span>
+                        
                       </div>
                     </li>
 
@@ -109,7 +109,7 @@ function Navbar() {
                       </ul>
 
                       <div className="dropdown-btn">
-                        <span className="fas fa-angle-down"></span>
+                        
                       </div>
                     </li>
 
@@ -134,7 +134,7 @@ function Navbar() {
                       </ul>
 
                       <div className="dropdown-btn">
-                        <span className="fas fa-angle-down"></span>
+                       
                       </div>
                     </li>
 
