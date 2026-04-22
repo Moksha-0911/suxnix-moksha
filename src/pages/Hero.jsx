@@ -26,6 +26,15 @@ import item2 from "../assets/images/ingredients_item02.webp";
 import item3 from "../assets/images/ingredients_item03.webp";
 import item4 from "../assets/images/ingredients_item04.webp";
 import formula from "../assets/images/formula_img.webp";
+import pricing1 from "../assets/images/pricing_01.avif";
+import pricing2 from "../assets/images/pricing_02.avif";
+import pricing3 from "../assets/images/pricing_03.avif";
+import blogthumb from "../assets/images/inner_blog_thumb03.webp";
+import blogthumb2 from "../assets/images/inner_blog_thumb02.webp";
+import blogthumb3 from "../assets/images/inner_blog_thumb01.webp";
+import testi from "../assets/images/testi_avatar01.webp";
+import testi2 from "../assets/images/testi_avatar02.webp";
+import testi3 from "../assets/images/testi_avatar03.webp";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -33,6 +42,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import massmax from "../assets/images/mass-maxx.webp";
 import tealeaf3 from "../assets/images/tea-leaf3.webp";
+import testimonial from "../assets/images/testimonial_bg.webp";
 
 function Hero() {
   return (
@@ -390,8 +400,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="swiper-area" >
-        <div className="container" >
+      <div className="swiper-area">
+        <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="protein-swiper" >
@@ -514,6 +524,31 @@ function Hero() {
                       </div>
                     </div>
                   </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="slick-clone">
+                      <div className="home-shop-item">
+                        <div className="home-shop-thumb">
+                          <a href="">
+                            <img src={homeshop3} className="homeshop" alt="" />
+                          </a>
+                          <div className="shop-thumb-shape gray"></div>
+                        </div>
+                        <div className="home-shop-content">
+                          <h4 className="title">
+                            <a href="">Whey Protein Powder</a>
+                          </h4>
+                          <span className="home-shop-price">Tk 49.99</span>
+                          <div className="home-shop-rating">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>
@@ -586,9 +621,9 @@ function Hero() {
           </div></div>
       </div>
       <div className="container">
-        <div className="row" style={{alignItems:"center",justifyContent:"center"}}>
+        <div className="row" style={{ alignItems: "center", justifyContent: "center" }}>
           <div className="col-xl-5 col-lg-6 col-md-7">
-            <div className="ingredients-img" style={{position:"relative"}}>
+            <div className="ingredients-img" style={{ position: "relative" }}>
               <img src={proteinwhey} className="protein-whey2" alt="" />
               <img src={tealeaf4} className="leaf-4" alt="" />
             </div>
@@ -599,7 +634,7 @@ function Hero() {
                 <p className="subtitle">..Increased Energy With Suxnix..</p>
                 <h2 className="title2">Suxnix Ingredients</h2>
               </div>
-              <div className="row" style={{marginTop:"5%"}}>
+              <div className="row" style={{ marginTop: "5%" }}>
                 <div className="col-md-6 col-sm-8">
                   <div className="ingredients-item-wow">
                     <div className="ingredients-thumb">
@@ -613,7 +648,7 @@ function Hero() {
                         A thing added to something else in order to complete or enhance it.
                       </p>
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div className="col-md-6 col-sm-8">
                   <div className="ingredients-item-wow">
@@ -628,7 +663,7 @@ function Hero() {
                         A thing added to something else in order to complete or enhance it.
                       </p>
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div className="col-md-6 col-sm-8">
                   <div className="ingredients-item-wow">
@@ -643,7 +678,7 @@ function Hero() {
                         A thing added to something else in order to complete or enhance it.
                       </p>
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div className="col-md-6 col-sm-8">
                   <div className="ingredients-item-wow">
@@ -658,7 +693,7 @@ function Hero() {
                         A thing added to something else in order to complete or enhance it.
                       </p>
                     </div>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -667,7 +702,7 @@ function Hero() {
       </div>
       <div className="container">
         <div className="tg-supplement-inner">
-          <div className="row" style={{marginTop:"10%"}}>
+          <div className="row" style={{ marginTop: "10%" }}>
             <div className="col-lg-6 col-md-8 order-0 order-lg-2">
               <div className="tg-supplement-img">
                 <img src={formula} className="formula-img" alt="" />
@@ -687,6 +722,383 @@ function Hero() {
           </div>
         </div>
       </div>
+      <section className="price-section">
+        <div className="container" style={{ position: "relative" }}>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-9">
+              <div className="section-title">
+                <p className="section-subtitle">.. Suxnix Plans ..</p>
+                <h2 className="section-title">SUPPLEMENT PACKAGES</h2>
+              </div>
+            </div>
+          </div>
+          <div className="pricing-wrap">
+            <div className="row">
+              <div className="col-lg-4 col-md-6 col-sm-9">
+                <div className="pricing-item" >
+                  <div className="pricing__box" style={{ marginTop: "80px" }}>
+                    <div className="pricing-hade">
+                      <span>1 Bottle Of</span>
+                      <h3 className="section-title2">Suxnix</h3>
+                      <p>(1 x 250 veggie caps bottle)</p>
+                    </div>
+                    <div className="pricing-img">
+                      <img src={pricing1} className="pricing" alt="" />
+                    </div>
+                    <div className="pricing-price">
+                      <h4 className="price">$69</h4>
+                      <span>Per <br></br>Bottle</span>
+                    </div>
+                    <h5 className="total">($69 TOTAL)</h5>
+                    <div className="price-savings">
+                      <h4 className="save">Save 14%</h4>
+                      <span>+ Free Shipping</span>
+                    </div>
+                    <div className="pricing-btn">
+                      <a href="">
+                        Buy Now
+                        <span>365 Day Full Money Back Guaranteed</span>
+                      </a>
+                    </div>
+                    <div className="bottom-img"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-9">
+                <div className="pricing-item">
+                  <div className="pricing-title">
+                    <h4 className="pricing-title">★ Most Popular ★</h4>
+                  </div>
+                  <div className="pricing__box">
+                    <div className="pricing-hade">
+                      <span>1 Bottle Of</span>
+                      <h3 className="pricing-title2">Suxnix</h3>
+                      <p>(1 x 250 veggie caps bottle)</p>
+                    </div>
+                    <div className="pricing-img">
+                      <img src={pricing2} className="pricing" alt="" />
+                    </div>
+                    <div className="pricing-price">
+                      <h4 className="price">$69</h4>
+                      <span>Per <br></br>Bottle</span>
+                    </div>
+                    <h5 className="total">($69 TOTAL)</h5>
+                    <div className="price-savings">
+                      <h4 className="save">Save 14%</h4>
+                      <span>+ Free Shipping</span>
+                    </div>
+                    <div className="pricing-btn">
+                      <a href="">
+                        Buy Now
+                        <span>365 Day Full Money Back Guaranteed</span>
+                      </a>
+                    </div>
+                    <div className="bottom-img"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-9">
+                <div className="pricing-item">
+                  <div className="price-title">
+                    <h4 className="pricing-title3">✓ Best Value</h4>
+                  </div>
+                  <div className="pricing__box">
+                    <div className="pricing-hade">
+                      <span>1 Bottle Of</span>
+                      <h3 className="pricing-title4">Suxnix</h3>
+                      <p>(1 x 250 veggie caps bottle)</p>
+                    </div>
+                    <div className="pricing-img">
+                      <img src={pricing3} className="pricing" alt="" />
+                    </div>
+                    <div className="pricing-price">
+                      <h4 className="price">$69</h4>
+                      <span>Per <br></br>Bottle</span>
+                    </div>
+                    <h5 className="total">($69 TOTAL)</h5>
+                    <div className="price-savings">
+                      <h4 className="save">Save 14%</h4>
+                      <span>+ Free Shipping</span>
+                    </div>
+                    <div className="pricing-btn">
+                      <a href="">
+                        Buy Now
+                        <span>365 Day Full Money Back Guaranteed</span>
+                      </a>
+                    </div>
+                    <div className="bottom-img"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="testimonial-area">
+        <div className="testimonial-wrapper">
+        <img src={testimonial} className="testimonial" alt="" style={{paddingTop:"100px",paddingBottom:"100px"}}/>
+        </div>
+        <div className="testimonial-overlay">
+          <div className="container">
+            <div className="row">
+                <div className="col-xxl-8 col-xl-9 col-lg-11">
+                  <div className="testimonial-swiper">
+                    <div className="swiper-button-prev custom-arrow left">←</div>
+                      <div className="swiper-button-next custom-arrow right">→</div>
+                    <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="TestimonialSwiper"
+      >
+        {/* Slide 1 */}
+        <SwiperSlide>
+          <div className="testimonial-content">
+            <div className="stars">★★★★★</div>
+
+            <p className="testimonial-text">
+              Becoming more involved in administration within the health system over the years...
+            </p>
+
+            <img src={testi} className="testi" alt="" />
+
+            <h4>JANETA COOPER</h4>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 2 */}
+        <SwiperSlide>
+          <div className="testimonial-content">
+            <div className="stars">★★★★★</div>
+            <p className="testimonial-text">Second testimonial...</p>
+            <img src={testi2} className="testi" alt="" />
+            <h4>JANETA COOPER</h4>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="testimonial-content">
+            <div className="stars">★★★★★</div>
+            <p className="testimonial-text">Second testimonial...</p>
+            <img src={testi3} className="testi" alt="" />
+            <h4>JANETA COOPER</h4>
+          </div>
+        </SwiperSlide>
+
+        
+      </Swiper>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container">
+        <div className="blog-inner-wrapper">
+          <div className="row">
+            <div className="col-lg-6 col-md-10">
+              <div className="blog-posts-wrapper">
+                <div className="blog-posts-title">
+                  <p className="blog-posts-subtitle">.. Suxnix News ..</p>
+                  <h2 className="posts-title">Latest News</h2>
+                </div>
+                <div className="blog-post-item">
+                  <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor"></a></div>
+                <div className="blog-post-thumb">
+                  <img src={blogthumb} className="blogthumb" alt="" style={{width:"90px",height:"90px"}}/>
+                  <div className="blog-post-content">
+                    <div className="content-top">
+                      <div className="tags">
+                        <a href="https://suxnix-dev.myshopify.com/blogs/news/tagged/business">business</a>
+                      </div>
+                      <span className="date">
+                        <i className="far fa-clock"></i>
+                        <time datetime="2025-01-16T08:16:19Z">January 16, 2025</time>
+                      </span>
+                    </div>
+                    <h3 className="con-title">
+                      <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor">Laboris nisi ut aliquip ex ea commodo consequat, Duis aute irure dolor.</a>
+                    </h3>
+                    <div className="content-bottom">
+                      <ul className="list-wrap">
+                        <li className="user">Posted by -
+                          <a href="#">Web Developer</a>
+                        </li>
+                        <li className="comments">
+                          <i className="far fa-envelope"></i>
+                          "0"
+                        </li>
+                        <li className="viewers">
+                          <i className="far fa-eye"></i>
+                          "k"
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="blog-post-item">
+                  <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor"></a></div>
+                <div className="blog-post-thumb">
+                  <img src={blogthumb2} className="blogthumb" alt="" style={{width:"90px",height:"90px"}}/>
+                  <div className="blog-post-content">
+                    <div className="content-top">
+                      <div className="tags">
+                        <a href="https://suxnix-dev.myshopify.com/blogs/news/tagged/business">business</a>
+                      </div>
+                      <span className="date">
+                        <i className="far fa-clock"></i>
+                        <time datetime="2025-01-16T08:16:19Z">January 16, 2025</time>
+                      </span>
+                    </div>
+                    <h3 className="con-title">
+                      <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor">Adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore..</a>
+                    </h3>
+                    <div className="content-bottom">
+                      <ul className="list-wrap">
+                        <li className="user">Posted by -
+                          <a href="#">Web Developer</a>
+                        </li>
+                        <li className="comments">
+                          <i className="far fa-envelope"></i>
+                          "0"
+                        </li>
+                        <li className="viewers">
+                          <i className="far fa-eye"></i>
+                          "k"
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="blog-post-item">
+                  <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor"></a></div>
+                <div className="blog-post-thumb">
+                  <img src={blogthumb3} className="blogthumb" alt="" style={{width:"90px",height:"90px"}}/>
+                  <div className="blog-post-content">
+                    <div className="content-top">
+                      <div className="tags">
+                        <a href="https://suxnix-dev.myshopify.com/blogs/news/tagged/business">business</a>
+                      </div>
+                      <span className="date">
+                        <i className="far fa-clock"></i>
+                        <time datetime="2025-01-16T08:16:19Z">January 16, 2025</time>
+                      </span>
+                    </div>
+                    <h3 className="con-title">
+                      <a href="https://suxnix-dev.myshopify.com/blogs/news/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor">Lorem ipsum dolor sit amet consecte cing elit sed do eiusmod tempor..</a>
+                    </h3>
+                    <div className="content-bottom">
+                      <ul className="list-wrap">
+                        <li className="user">Posted by -
+                          <a href="#">Web Developer</a>
+                        </li>
+                        <li className="comments">
+                          <i className="far fa-envelope"></i>
+                          "0"
+                        </li>
+                        <li className="viewers">
+                          <i className="far fa-eye"></i>
+                          "k"
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-10">
+              <div className="faq-wrapper">
+                <div className="faq-title">
+                  <p className="faq-subtitle">
+                    .. Common Questions ..
+                  </p>
+                  <h2 className="faq-title2">Frequently Asked Questions</h2>
+                </div>
+                <div className="accordion" id="accordionExample">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="heading1">
+                      <button className="accordion-button ">
+                        <span className="count">01.</span>
+                        Suxnix ingredients provides a searchable ?
+                      </button>
+                    </h2>
+                    <div id="collapse1" className="accordion-collapse">
+                      <div className="accordion-body">
+                        There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="heading2">
+                      <button className="accordion-button ">
+                        <span className="count">02.</span>
+                        How to edit Suxnix themes ?
+                      </button>
+                    </h2>
+                    <div id="collapse2" className="accordion-collapse">
+                      <div className="accordion-body">
+                        There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="heading3">
+                      <button className="accordion-button ">
+                        <span className="count">03.</span>
+                        Suxnix app is a powerful application ?</button>
+                    </h2>
+                    <div id="collapse3" className="accordion-collapse">
+                      <div className="accordion-body">
+                        There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="heading4">
+                      <button className="accordion-button ">
+                        <span className="count">04.</span>
+                        Latest version thorough Suxnix powerful ?
+                      </button>
+                    </h2>
+                    <div id="collapse4" className="accordion-collapse">
+                      <div className="accordion-body">
+                        There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="heading5">
+                      <button className="accordion-button ">
+                        <span className="count">05.</span>
+
+                        How to Track My Order ?
+
+                      </button>
+                    </h2>
+                    <div id="collapse5" className="accordion-collapse">
+                      <div className="accordion-body">
+                        There are many variations of passages of lorem ipsum that available but the majority have alteration in some form by injected humour. There are many variations of passages.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
   );
 }

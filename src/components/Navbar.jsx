@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import cart from "../assets/images/cart-icon.png";
 import search from "../assets/images/search-icon.png";
 
+
 function Navbar() {
   return (
     <div id="sticky-header" className="menu-area">
